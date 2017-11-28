@@ -5,7 +5,7 @@ USER root
 RUN \
 yum -y install epel-release && \
 yum repolist && \
-yum install -y firebird-devel && \
+yum install -y firebird-devel samba-client && \
 yum clean all -y
 
 USER 1001
